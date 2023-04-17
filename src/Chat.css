@@ -1,0 +1,7 @@
+.container{
+    display: flex;
+}
+
+.ChatText{
+    margin-left: 10%;
+}
