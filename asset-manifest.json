@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dogGPT/static/css/main.a6c4aaa5.css",
-    "main.js": "/dogGPT/static/js/main.69a683bb.js",
+    "main.css": "/dogGPT/static/css/main.dbdc7d93.css",
+    "main.js": "/dogGPT/static/js/main.ddf712ba.js",
     "index.html": "/dogGPT/index.html",
-    "main.a6c4aaa5.css.map": "/dogGPT/static/css/main.a6c4aaa5.css.map",
-    "main.69a683bb.js.map": "/dogGPT/static/js/main.69a683bb.js.map"
+    "main.dbdc7d93.css.map": "/dogGPT/static/css/main.dbdc7d93.css.map",
+    "main.ddf712ba.js.map": "/dogGPT/static/js/main.ddf712ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6c4aaa5.css",
-    "static/js/main.69a683bb.js"
+    "static/css/main.dbdc7d93.css",
+    "static/js/main.ddf712ba.js"
   ]
 }
