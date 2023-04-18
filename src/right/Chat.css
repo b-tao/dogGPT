@@ -1,0 +1,29 @@
+.ChatText{
+    display: flex;
+    flex-direction: column;
+}
+.dogimage{
+    max-height: 300px;
+}
+.ImageID{
+    height: 40px;
+}
+.text{
+    margin-left: 5px;
+    max-width: 70%;
+    flex: 1;
+    overflow-wrap: break-word;
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+}
+.chatmessage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    border-bottom: solid lightgray 2px;
+
+}

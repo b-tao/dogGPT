@@ -1,7 +1,9 @@
 import './index.css';
-import InputBox from './InputBox';
-import Chat from './Chat';
+import InputBox from './right/InputBox';
+import Chat from './right/Chat';
 import { useState } from 'react';
+import NewChat from './left/NewChat';
+import Github from './GitHub-Mark.png'
 
 function App() {
   const [chatMessages, setChatMessages] = useState([]);
@@ -13,11 +15,22 @@ function App() {
   return (
     <div className="container">
       <div className="leftside">
-        <p>left</p>
+        <NewChat />
       </div>
       <div className="rightside">
-        <Chat chatMessages={chatMessages} />
-        <InputBox onEnterKeyPress={handleEnterKeyPress} />
+        <div className="chat-container">
+          <Chat chatMessages={chatMessages} />
+        </div>
+        <InputBox className='inputbox' onEnterKeyPress={handleEnterKeyPress} />
+        <div className='des-wrapper'>
+          <p className='des'>A Parody of <a href="https://openai.com/blog/chatgpt"> ChatGPT </a>and <a href="https://cat-gpt.com/">CatGPT</a> created by Brian Tao</p>
+          <a href="https://github.com/b-tao/dogGPT">
+            <div className='imageContainer'>
+              <img src={Github} alt="Github logo" />
+            </div>
+          </a>
+
+        </div>
       </div>
     </div>
   );
