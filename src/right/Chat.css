@@ -1,29 +1,84 @@
-.ChatText{
-    display: flex;
-    flex-direction: column;
-}
-.dogimage{
-    max-height: 300px;
-}
-.ImageID{
-    height: 40px;
-}
-.text{
-    margin-left: 5px;
-    max-width: 70%;
-    flex: 1;
-    overflow-wrap: break-word;
+.ChatText {
+  display: flex;
+  flex-direction: column;
 }
 
-.imageContainer{
-    display: flex;
-    align-items: center;
+.dogimage {
+  max-height: 300px;
+  max-width: min-content;
 }
-.chatmessage{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 10%;
-    border-bottom: solid lightgray 2px;
 
+.ImageID {
+  height: 40px;
+  width: 40x;
+  border: solid 2px black;
+  border-radius: 17%;
+  
+}
+
+.text {
+  margin-left: 5px;
+  max-width: 70%;
+  flex: 1;
+  overflow-wrap: break-word;
+}
+
+.imageContainer {
+  display: flex; 
+  align-items: flex-start;
+  margin-top: 2%;
+  width: 5%;
+  
+}
+
+.chatmessage {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  padding-left: 10%;
+  border-bottom: solid lightgray 2px;
+}
+
+.chatresponse {
+  padding-top: 1%;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  padding-left: 10%;
+  border-bottom: solid lightgray 2px;
+  background-color: #f7f7f8;
+}
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 3s steps(40, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  vertical-align: bottom;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.text-wrapper{
+  display: flex;
+  flex-direction: column;
 }

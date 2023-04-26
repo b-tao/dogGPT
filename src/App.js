@@ -3,14 +3,18 @@ import InputBox from './right/InputBox';
 import Chat from './right/Chat';
 import { useState } from 'react';
 import NewChat from './left/NewChat';
-import Github from './GitHub-Mark.png'
+import Github from './GitHub-Mark.png';
+import IntroCard from './right/IntroCard';
 
 function App() {
   const [chatMessages, setChatMessages] = useState([]);
+  const [emptyPage, setemptyPage] = useState(true);
 
   const handleEnterKeyPress = (message) => {
+    if (message != ''){
+      setemptyPage(false);
     setChatMessages([...chatMessages, message]);
-  }
+  }}
 
   return (
     <div className="container">
@@ -19,6 +23,9 @@ function App() {
       </div>
       <div className="rightside">
         <div className="chat-container">
+          {emptyPage && <div>
+            <IntroCard />
+            </div>}
           <Chat chatMessages={chatMessages} />
         </div>
         <InputBox className='inputbox' onEnterKeyPress={handleEnterKeyPress} />

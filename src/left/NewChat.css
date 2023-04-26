@@ -2,6 +2,31 @@
     color: white;
     border: solid 1px white;
     margin:10%;
-    padding:2%;
+    padding:5%;
     border-radius: 10px;
 }
+.extra_icons{
+    margin-top:195%;
+    width: 12rem;
+    font-size: large;
+    border-top: solid 1px white;
+
+}
+.Contact_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    margin-left: 10%;    
+    width: auto;
+}
+.imageContainer {
+    display: flex; 
+    
+  }
+  .ImageID {
+    height: 40px;
+    width: 40x;
+    
+  }
