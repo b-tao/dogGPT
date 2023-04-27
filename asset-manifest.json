@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dogGPT/static/css/main.3ce49a0c.css",
-    "main.js": "/dogGPT/static/js/main.9148d3b8.js",
+    "main.css": "/dogGPT/static/css/main.4ca3772b.css",
+    "main.js": "/dogGPT/static/js/main.44d34e2c.js",
     "static/media/dog.jpg": "/dogGPT/static/media/dog.022d540659181e0d8eb1.jpg",
     "static/media/human.jpg": "/dogGPT/static/media/human.bad488febe70d5a826d3.jpg",
     "index.html": "/dogGPT/index.html",
-    "main.3ce49a0c.css.map": "/dogGPT/static/css/main.3ce49a0c.css.map",
-    "main.9148d3b8.js.map": "/dogGPT/static/js/main.9148d3b8.js.map"
+    "main.4ca3772b.css.map": "/dogGPT/static/css/main.4ca3772b.css.map",
+    "main.44d34e2c.js.map": "/dogGPT/static/js/main.44d34e2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ce49a0c.css",
-    "static/js/main.9148d3b8.js"
+    "static/css/main.4ca3772b.css",
+    "static/js/main.44d34e2c.js"
   ]
 }
