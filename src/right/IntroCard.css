@@ -1,6 +1,6 @@
 .title{
     text-align: center;
-    font-size: xx-large;
+    font-size: 2rem;
     font-weight: bolder;
 }
 .card{
@@ -19,18 +19,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
     width: 25%;
+    font-size: .8rem;
+
 }
 
 .examplestext{
     background-color: gainsboro;
     text-align: center;
-    padding: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 25px;
-    margin: 1%;
+    padding: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    margin: .2rem;
 }
 .subtitle{
-    font-size: large;
+    font-size: .9rem;
 }
