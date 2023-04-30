@@ -10,4 +10,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Dog images provided courtesy of  <a href="https://dog.ceo/"> DogCEO
   
-This project was inspired by OpenAI's ChatGPT, and its parody - CatGPT. There is no relationship between this project and theirs beyond pure inspiration.
+Dog GPT was inspired by OpenAI's ChatGPT, and its parody - CatGPT / Cat GPT. There is no relationship between this project and theirs beyond pure inspiration.
+
