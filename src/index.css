@@ -41,12 +41,12 @@ a {
   color: inherit;
   /* text-decoration: none; */
 }
-.imageContainer{
+.imageContainer-git{
     display: flex;
     align-items: center;
-
+  margin: 0;
 }
-.imageContainer > img{
+.imageContainer-git > img{
   height: 20px;
 }
 .des-wrapper{

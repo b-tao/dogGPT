@@ -6,7 +6,7 @@
 .dogimage {
   flex-shrink: 1;
   text-align: center;
-  max-width: 95%;
+  max-width: 40vw;
   flex-basis: 0;
   max-height: 95%;
   margin-left: 1rem;

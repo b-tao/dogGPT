@@ -1,7 +1,10 @@
 import './IntroCard.css';
 import dog_image from './dog.jpg'
 
-export default function IntroCard() {
+export default function IntroCard({handleEnterKeyPress}) {
+    const message1 = "When can I go on a walk?"
+    const message2 = "Why are treats so delicious?"
+    const message3 = "Woof?"
     return (
         <div className='card'>
             <div className="title">
@@ -11,9 +14,9 @@ export default function IntroCard() {
                 <div className='column'>
                     <img className="enterimage" src={dog_image} alt="enter icon" />
                     <p className='subtitle'>Examples</p>
-                    <p className='examplestext'>"When can I go on a walk?"→</p>
-                    <p className='examplestext'>"Why are treats so delicious?"→</p>
-                    <p className='examplestext'>"Woof?"→</p>
+                    <p className='examplestext' onClick={()=>handleEnterKeyPress(message1)}>"When can I go on a walk?"→</p>
+                    <p className='examplestext'onClick={()=>handleEnterKeyPress(message2)}>"Why are treats so delicious?"→</p>
+                    <p className='examplestext'onClick={()=>handleEnterKeyPress(message3)}>"Woof?"→</p>
                 </div>
                 <div className='column'>
                     <img className="enterimage" src={dog_image} alt="enter icon" />

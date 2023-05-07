@@ -1,0 +1,26 @@
+.selection > p{
+    color: white;
+    margin: 0px;
+}
+.selection{
+    padding: .7rem;
+    border-bottom: 1px white solid;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.selection-delete{
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    padding-left: .8vw;
+}
+
+
+.chat-selector-text{
+    overflow: hidden;
+    white-space: nowrap;
+}
