@@ -90,3 +90,40 @@
   flex-direction: column;
   max-width: fit-content;
 }
+/* 
+.appear-from-left {
+  position: relative;
+  animation: appear-from-left 0.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+} */
+
+@keyframes appear-from-left {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+/* 
+.appear-from-left span {
+  display: inline-block;
+  animation: letter-appear 0.1s ease-out;
+  animation-delay: calc(0.1s * var(--index));
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes letter-appear {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+} */

@@ -14,9 +14,9 @@ export default function IntroCard({handleEnterKeyPress}) {
                 <div className='column'>
                     <img className="enterimage" src={dog_image} alt="enter icon" />
                     <p className='subtitle'>Examples</p>
-                    <p className='examplestext' onClick={()=>handleEnterKeyPress(message1)}>"When can I go on a walk?"→</p>
-                    <p className='examplestext'onClick={()=>handleEnterKeyPress(message2)}>"Why are treats so delicious?"→</p>
-                    <p className='examplestext'onClick={()=>handleEnterKeyPress(message3)}>"Woof?"→</p>
+                    <p className='examplestext exhover' onClick={()=>handleEnterKeyPress(message1)}>"When can I go on a walk?"→</p>
+                    <p className='examplestext exhover'onClick={()=>handleEnterKeyPress(message2)}>"Why are treats so delicious?"→</p>
+                    <p className='examplestext exhover'onClick={()=>handleEnterKeyPress(message3)}>"Woof?"→</p>
                 </div>
                 <div className='column'>
                     <img className="enterimage" src={dog_image} alt="enter icon" />
@@ -27,7 +27,7 @@ export default function IntroCard({handleEnterKeyPress}) {
                 </div>                <div className='column'>
                 <img className="enterimage" src={dog_image} alt="enter icon" />
                     <p className='subtitle'>Limitations</p>
-                    <p className='examplestext'>Competing against Cats for best Pet</p>
+                    <p className='examplestext'>Only speaks Dog Langauge (for now)</p>
                     <p className='examplestext'>Can not understand why a Human would want a Cat</p>
                     <p className='examplestext'>Meow?</p>
                 </div>

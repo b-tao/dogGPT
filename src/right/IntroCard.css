@@ -37,3 +37,8 @@
 .subtitle{
     font-size: .9rem;
 }
+
+.exhover:hover{
+    transition: background-color .3s ease-in-out;
+    background-color: rgb(189, 188, 188);
+}

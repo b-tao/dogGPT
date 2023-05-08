@@ -1,7 +1,7 @@
 import './ChatSelect.css'
 
 
-export default function ChatSelection({ key, message, allchat, onDelete, setid, index, setemptyPage }) {
+export default function ChatSelection({ key, message, allchat, onDelete, setid, index, setemptyPage, id, emptyPage }) {
     const handleDelete = () => {
         onDelete()
     }
@@ -13,11 +13,13 @@ export default function ChatSelection({ key, message, allchat, onDelete, setid, 
         }
     };
 
+    const isHighlighted = emptyPage ? false : index === id
+
     return (
         <div>
-            <div className="selection" onClick={handleClick}>
+            <div className={`selection ${isHighlighted ? 'highlighted' : 'hover-selected'}`} onClick={handleClick}>
                 <p className='chat-selector-text'> {message}</p>
-                <p className='selection-delete' onClick={handleDelete}>X</p>
+               { isHighlighted&& <p className='selection-delete' onClick={handleDelete}>X</p> }
             </div>
         </div>
     )

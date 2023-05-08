@@ -6,6 +6,7 @@ import dog from './dog.jpg';
 export default function ChatText({ key, text, setChats, index, allchat, chatnum }) {
   const [imageUrl, setImageUrl] = useState('');
   const [responseText, setResponseText] = useState('');
+  var firstappear = true
 
   useEffect(() => {
     let sounds = ['woof', 'bark', 'ruff', 'arf', 'bow wow', 'yap', 'yip'];
@@ -37,45 +38,52 @@ export default function ChatText({ key, text, setChats, index, allchat, chatnum 
         const response = await fetch('https://dog.ceo/api/breeds/image/random');
         const data = await response.json();
         setImageUrl(data.message);
-    
+
         var addition = allchat[chatnum].message[index];
         addition = [...addition, data.message, returnString];
         var allchatmessage = [...allchat[chatnum].message.slice(0, index), addition, ...allchat[chatnum].message.slice(index + 1)];
         setChats([...allchat.slice(0, chatnum), { id: chatnum, message: allchatmessage }, ...allchat.slice(chatnum + 1)]);
-        
+
       } catch (error) {
         console.log(error);
       }
     }
-    
+
     handleFetch();
-    
 
+  }, []);
+  // console.log('text', index, chatnum, text)
 
-     } , []);
-    // console.log('text', index, chatnum, text)
-
-    return (
-      <div className="ChatText">
-        <div className="chatmessage">
-          <div className="imageContainer">
-            <img className="ImageID" src={human} alt="human icon" />
-          </div>
-          <p className="text">{text[0]}</p>
+  return (
+    <div className="ChatText">
+      <div className="chatmessage">
+        <div className="imageContainer">
+          <img className="ImageID" src={human} alt="human icon" />
         </div>
-        <div className="chatresponse">
-          <div className="imageContainer">
-            <img className="ImageID" src={dog} alt="dog icon" />
-          </div>
-          <div className="text-wrapper">
-            <img className="dogimage" src={text[1] ? text[1] : './dog.jpg'} alt="random dog" />
-            <p className="text">{text[2]}</p>
-            {/* <TypewriterText text={responseText} /> */}
-          </div>
+        <p className="text">{text[0]}</p>
+      </div>
+      <div className="chatresponse">
+        <div className="imageContainer">
+          <img className="ImageID" src={dog} alt="dog icon" />
+        </div>
+        <div className="text-wrapper">
+          <img className="dogimage" src={text[1] ? text[1] : './dog.jpg'} alt="random dog" />
+
+
+          <p className={`text appear-from-left ${firstappear ? '.appear-from-left.visible' : ''}`}>{text[2]}</p>
+{/* 
+          <p className={`text appear-from-left ${firstappear ? 'highlighted' : 'hover-selected'}`}>
+            {text[2].split('').map((char, index) => (
+              <span key={index} style={{ '--index': index }}>{char}</span> */}
+            {/* ))}
+          </p> */}
+
+          {/* <TypewriterText text={responseText} /> */}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
 // function TypewriterText(text) {
 //   const [text, setText] = useState('');

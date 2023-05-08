@@ -19,6 +19,15 @@
     padding-left: .8vw;
 }
 
+.highlighted{
+    background-color: #404754;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hover-selected:hover{
+    background-color: #333b4a;
+    transition: background-color 0.7s ease-in-out;
+}
 
 .chat-selector-text{
     overflow: hidden;

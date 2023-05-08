@@ -2,7 +2,7 @@ import './NewChat.css';
 import dog from '../right/dog.jpg';
 import ChatSelect from './ChatSelect';
 
-export default function NewChat({ chats, setChats, newChat, setemptyPage, setid, deleteChat }) {
+export default function NewChat({ chats, setChats, newChat, setemptyPage, setid, deleteChat, id, emptyPage }) {
     return (
         <div className='overall'>
             <div className='NewChatSection'>
@@ -12,7 +12,7 @@ export default function NewChat({ chats, setChats, newChat, setemptyPage, setid,
                     </div>
                     </div>
             <div className='current chats'>
-                <ChatSelect input={chats} setChats={setChats} setemptyPage={setemptyPage} setid={setid} deleteChat={deleteChat}/>
+                <ChatSelect input={chats} setChats={setChats} setemptyPage={setemptyPage} setid={setid} deleteChat={deleteChat} id={id} emptyPage={emptyPage}/>
             </div>
             <div className='extra_icons'>
                 <div className="Contact_wrapper">

@@ -22,7 +22,6 @@
 }
 .inputbox{
   position: fixed;
-
 }
 .chat-container {
   height: calc(100% - 50px);
@@ -45,6 +44,9 @@ a {
     display: flex;
     align-items: center;
   margin: 0;
+}
+.imageContainer-git:hover{
+  cursor: pointer;
 }
 .imageContainer-git > img{
   height: 20px;

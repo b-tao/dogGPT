@@ -8,11 +8,21 @@
     margin-right: 10%;
     border: solid gainsboro 2px;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
-
+    transition: border-color 0.2s ease-in-out;
   }
+  .input-wrapper:hover {
+    border-color: #16506d;
+  }
+
   .enterimage {
     height: 40px;
     border:none;
+    transition: transform 0.2s ease-in-out;
+  }
+  .enterimage:hover {
+    cursor: pointer;
+    /* expand image in size by 1.5 times */
+    transform: scale(1.05);
   }
   
   .input-field {

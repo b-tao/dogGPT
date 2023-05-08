@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="container">
       <div className="leftside">
-        <NewChat chats={allchat} setChats={setallchat} newChat={newChat} setemptyPage={setemptyPage} setid={setid} deleteChat={deleteChat}/>
+        <NewChat chats={allchat} setChats={setallchat} newChat={newChat} setemptyPage={setemptyPage} setid={setid} deleteChat={deleteChat} id={id} emptyPage={emptyPage}/>
       </div>
       <div className="rightside">
         <div className="chat-container">
@@ -63,8 +63,8 @@ function App() {
         </div>
         <InputBox className='inputbox' onEnterKeyPress={handleEnterKeyPress} />
         <div className='des-wrapper'>
-          <p className='des'>A Parody of <a href="https://openai.com/blog/chatgpt"> ChatGPT </a>and <a href="https://cat-gpt.com/">CatGPT</a> created by Brian Tao</p>
-          <a href="https://github.com/b-tao/dogGPT">
+          <p className='des'>A Parody of <a href="https://openai.com/blog/chatgpt"target="_blank" rel="noopener noreferrer"> ChatGPT </a>and <a href="https://cat-gpt.com/"target="_blank" rel="noopener noreferrer">CatGPT</a> created by Brian Tao</p>
+          <a href="https://github.com/b-tao/dogGPT" target="_blank" rel="noopener noreferrer">
             <div className='imageContainer-git'>
               <img src={Github} alt="Github logo" />
             </div>
